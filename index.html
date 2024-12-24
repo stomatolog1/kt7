@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-titul{
+            height: auto;
+            display: grid;
+            grid-template-columns: 10em 7em auto 5em 3em 5em 10em;
+            grid-template-rows: 5em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgba(14, 14, 14, 0.623);
+            text-align: end;  
+            align-items: center; 
+            
+        }
+        .th{
+            position: sticky;
+            top: 0;
+        }
+        .border{
+            /* border: 2px solid rgb(119, 119, 119); */
+        }
+        body{
+            background-color: rgb(37, 37, 37);
+        }
+        .white{
+            color: white;
+        }
+        .glav-huta{
+            height: 60em;
+            width: 107.5em;
+            display: grid;
+            grid-template-columns: 16em 30em auto ;
+            grid-template-rows: 10em 10em 8em 10em;
+            background-repeat: no-repeat;
+            background-size: cover;    
+            margin-top: 1em; 
+            margin-left: 5em;
+            background-color: rgb(19, 19, 19);
+        }
+        .okruglator{
+            border-radius: 3%;
+        }
+        .hui{
+            font-size: 50px;
+            margin-left: 1em;
+            margin-top: 2em;
+        }
+        .box-uznai{
+            margin-top: 2em;
+            margin-left: 5em;
+            height: 3em;
+            width: 19em;
+            border: 2px solid rgba(125, 255, 3, 0.733);
+            text-align: center;  
+            align-items: start; 
+            
+        }
+        .govno{
+            margin-top: 11px;
+        }
+        .grey{
+            color: rgb(114, 114, 114);
+            letter-spacing: 0.7px;
+
+        }
+        .tit-komp{
+            height: 60em;
+            width: 107.5em;
+            margin-left: 5em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 19em 30em 9.5em 30em 19em;
+            grid-template-rows: 15em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .tit-komp-1{
+            height: 60em;
+            width: 107.5em;
+            margin-left: 5em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 19em 30em 9.5em 30em 19em;
+            grid-template-rows: 15em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .model{
+            width: 300px;
+            height: 300px;
+            margin-left: 8em;
+            margin-top: 12em;
+        }
+        .box-pc{
+            width: 24em;
+            height: 35em;
+            background-color: rgb(37, 37, 37);
+            margin-left: 3.5em;
+        }
+        h4{
+            color: rgba(255, 255, 255, 0.5);
+        }
+        h1{
+            font-size: 40px;
+        }
+        .box-l{
+            width: 23.5em;
+            height: 50px;
+            border: 2px solid rgba(125, 255, 3, 0.733);
+            text-align: end;  
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+        }
+        .left{
+            margin-left: 7em;
+        }
+        .left1{
+            margin-left: 22.5em;
+        }
+        .left2{
+            margin-left: 17.7em;
+        }
+        slaven{
+            font-size: 20px;
+            color: white;
+            letter-spacing: 0.9px;
+        }
+        .my-image {
+         width: 900px;
+         height: auto;
+        }
+
+        @media screen and (min-width: 1430px) and (max-width: 1440px) {
+            .box-titul{
+            height: auto;
+            display: grid;
+            grid-template-columns: 10em 7em auto 5em 3em 5em 1em;
+            grid-template-rows: 5em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgba(14, 14, 14, 0.623);
+            text-align: end;  
+            align-items: center; 
+            
+        }
+        .glav-huta{
+            height: 60em;
+            width: auto;
+            display: grid;
+            grid-template-columns: 10em 22em auto ;
+            grid-template-rows: 10em 10em 8em 10em;
+            background-repeat: no-repeat;
+            background-size: cover;    
+            margin-top: 1em; 
+            margin-left: 1em;
+            background-color: rgb(19, 19, 19);
+        }
+        .my-image {
+         width: 800px;
+         height: auto;
+        }
+        .box-uznai{
+            margin-top: 2em;
+           margin-left: 1em;
+            height: 3em;
+            width: 19em;
+            border: 2px solid rgba(125, 255, 3, 0.733);
+            text-align: center;  
+            align-items: start; 
+            
+        }
+        .tit-komp{
+            height: 60em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 9em 30em 8em 30em 1em;
+            grid-template-rows: 15em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .tit-komp-1{
+            height: 60em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 9em 30em 8em 30em 1em;
+            grid-template-rows: 15em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .left{
+            margin-left: 3em;
+        }
+        .left1{
+            margin-left: 23.5em;
+        }
+        .left2{
+            margin-left: 14em;
+        }
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1024px) {
+            .box-titul{
+            height: auto;
+            display: grid;
+            grid-template-columns: 6em 7em auto 5em 3em 5em 1em;
+            grid-template-rows: 5em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgba(14, 14, 14, 0.623);
+            text-align: end;  
+            align-items: center; 
+            
+        }
+        .glav-huta{
+            height: 43em;
+            width: auto;
+            display: grid;
+            grid-template-columns: 5em 20em auto ;
+            grid-template-rows: 10em 10em 8em 10em;
+            background-repeat: no-repeat;
+            background-size: cover;    
+            margin-top: 1em; 
+            margin-left: 1em;
+            background-color: rgb(19, 19, 19);
+        }
+        .my-image {
+         width: 540px;
+         height: auto;
+        }
+        .box-uznai{
+            margin-top: -2em;
+           margin-left: 1px;
+            height: 3em;
+            width: 19em;
+            border: 2px solid rgba(125, 255, 3, 0.733);
+            text-align: center;  
+            align-items: start; 
+            
+        }
+        .tit-komp{
+            height: 60em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 1em 27em 1em 30em 1em;
+            grid-template-rows: 15em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .tit-komp-1{
+            height: 100em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 3em 27em 1em 30em 1em;
+            grid-template-rows: 15em 3em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .left{
+            margin-left: 4em;
+        }
+        .left1{
+            margin-left: 31em;
+        }
+        .left2{
+            margin-top: 40em;
+            margin-left: -12.2em;
+        }
+    }
+    @media screen and (min-width: 730px) and (max-width: 800px) {
+            .box-titul{
+            height: auto;
+            display: grid;
+            grid-template-columns: 1em 7em auto 5em 3em 5em 1em;
+            grid-template-rows: 5em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgba(14, 14, 14, 0.623);
+            text-align: end;  
+            align-items: center; 
+            
+        }
+        .glav-huta{
+            height: 43em;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1em 20em auto ;
+            grid-template-rows: 10em 10em 8em 10em;
+            background-repeat: no-repeat;
+            background-size: cover;    
+            margin-top: 1em; 
+            margin-left: 1em;
+            background-color: rgb(19, 19, 19);
+        }
+        .my-image {
+         width: 390px;
+         height: 300px;
+        }
+        .box-uznai{
+            margin-top: -2em;
+           margin-left: 1px;
+            height: 3em;
+            width: 19em;
+            border: 2px solid rgba(125, 255, 3, 0.733);
+            text-align: center;  
+            align-items: start; 
+            
+        }
+        .tit-komp{
+            height: 95em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns:auto;
+            grid-template-rows:1em 1em 10em 1px 1px 1px;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .tit-komp-1{
+            height: 160em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 7em 10em;
+            grid-template-rows: 10em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .left{
+            margin-left: 4em;
+            margin-top: 1em;
+        }
+        .left1{
+            margin-top: 10em;
+            margin-left: 11em;
+        }
+        .left2{
+            margin-top: 10em;
+            margin-left: 11em;
+        }
+    }
+    @media screen and (min-width: 380px) and (max-width: 450px) {
+            .box-titul{
+            height: auto;
+            display: grid;
+            grid-template-columns: 1em 7em auto 5em 3em 5em 1em;
+            grid-template-rows: 5em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgba(14, 14, 14, 0.623);
+            text-align: end;  
+            align-items: center; 
+            
+        }
+        .mard{
+        margin-left: 1.5px;
+        }
+        .my-image {
+         width: 390px;
+         height: 300px;
+        }
+        .a{
+            height: 43em;
+            width: auto;
+            display: grid;
+            grid-template-columns:auto ;
+            grid-template-rows:auto;
+            background-repeat: no-repeat;
+            background-size: cover;    
+            margin-top: 1em; 
+            margin-left: 1em;
+            background-color: rgb(19, 19, 19); 
+        }
+        .box-uznai{
+            margin-top: -2em;
+           margin-left: 1px;
+            height: 3em;
+            width: 19em;
+            border: 2px solid rgba(125, 255, 3, 0.733);
+            text-align: center;  
+            align-items: start; 
+            
+        }
+        .tit-komp{
+            height: 95em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns:auto;
+            grid-template-rows:1em 1em 10em 1px 1px 1px;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .tit-komp-1{
+            height: 160em;
+            width: auto;
+            margin-left: 1em;
+            margin-top: -25em;
+            display: grid;
+            grid-template-columns: 7em 10em;
+            grid-template-rows: 10em;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-color: rgb(19, 19, 19);  
+        }
+        .left{
+            margin-left: -6.7em;
+            margin-top: 1em;
+        }
+        .left1{
+            margin-top: 10em;
+            margin-left: 4px;
+        }
+        .left2{
+            margin-top: 10em;
+            margin-left: 4px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box-titul th">
+        <div class="border"></div>
+        <div class="border"><img src="pictyres/logo.jpg" width="80px" height="80px"></div>
+        <div class="border"></div>
+        <div class="border"><img src="pictyres/shopping.png" width="50px" height="50px"></div>
+        <div class="border"></div>
+        <div class="border white">ПРОФИЛЬ</div>
+        <div class="border"></div>
+        <div class="border"></div>
+    </div>
+    <div class="border okruglator glav-huta a">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border white"><h1>SLAVEN UITA</h1></div>
+        <div class="border"><img src="pictyres/komp-1.png" class="my-image"></div>
+        <div class="border"></div>
+        <div class="border grey"><h1>МОЩЬНЫЙ И РАСКОШНЫЙ</h1></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border">
+            <div class="box-uznai"><h2 class="white govno">УЗНАТЬ БОЛЬШЕ</h2></div>
+        </div>
+        
+    </div>
+    <div class="model white"><h1>Модели:</h1></div>
+    <div class="tit-komp okruglator">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border box-pc mard">
+            <div class="border"><img src="pictyres/komp-2.png" width="400px" height="350px"></div>
+            <div class="border white"><h2>JOKER:</h2></div>
+            <div class="border"><h4>Процесор: Intel Core i5-14400F</h4><h4>Видеокарта: GeForce RTX 4060</h4> <h4>SSD:
+                1TB M.2 NVMe Kingston NV2</h4></div>
+                <div class="border box-l white"><h2>УЗНАТЬ БОЛЬШЕ</h2></div>
+        </div>
+        <div class="border"></div>
+        <div class="border box-pc mard">
+            <div class="border"><img src="pictyres/komp-3-Photoroom.png" width="400px" height="350px"></div>
+            <div class="border white"><h2>KOKER:</h2></div>
+            <div class="border"><h4>Процесор: Intel Core i5-14400F</h4><h4>Видеокарта: GeForce RTX 4060</h4> <h4>SSD:
+                1TB M.2 NVMe Kingston NV2</h4></div>
+                <div class="border box-l white"><h2>УЗНАТЬ БОЛЬШЕ</h2></div>
+        </div>
+        <div class="border"></div>
+        
+    </div>
+    <div class="model white"><h1>Возможности:</h1></div>
+    <div class="tit-komp-1 okruglator">
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border"></div>
+        <div class="border box-pc left"><h1 class="white">Создавай</h1>
+            <div class="border"><img src="pictyres/sosdovai.jpg" width="384px"height="350px"></div>
+            <div class="border white"><h3 class="grey">-Создовай свой компьютер мечты</h3><h3 class="grey">-При поддержке команды <slaven>Slaven.pc</slaven></h3></div>
+           
+                <div class="border box-l white"><h2>УЗНАТЬ БОЛЬШЕ</h2></div>
+        </div>
+        <div class="border box-pc left1"><h1 class="white">Улучшай</h1>
+            <div class="border"><img src="pictyres/global-preview-Photoroom.png" width="390px" height="350px"></div>
+            
+            <div class="border white"><h3 class="grey">-Улучши свой компьютер</h3><h3 class="grey">-При поддержке команды <slaven>Slaven.pc</slaven></h3></div>
+                <div class="border box-l white"><h2>УЗНАТЬ БОЛЬШЕ</h2></div>
+        </div>
+        <div class="border"></div>
+        <div class="border box-pc left2"><h1 class="white">Готовые решения</h1>
+            <div class="border"><img src="pictyres/komp-pramoi.png" width="400px" height="350px"></div>
+            <div class="border white"><h3 class="grey">Выбери компьютер из готовых решений</h3><h3 class="grey">-При поддержке команды <slaven>Slaven.pc</slaven></h3></div>
+                <div class="border box-l white"><h2>УЗНАТЬ БОЛЬШЕ</h2></div>
+                
+        </div>
+        <div class="border"></div>
+        
+    </div></div>
+</body>
+</html>
